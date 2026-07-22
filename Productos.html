@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Río Supermarket - Gestión de Productos</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="header-container">
+            <h1 class="brand-title">Río Supermarket C.A.</h1>
+            <p class="brand-tagline">Servicio y Calidad al alcance de tu mano</p>
+        </div>
+    </header>
+
+    <nav class="main-nav">
+        <a href="bienvenidos.html">Inicio</a>
+        <a href="productos.html">Productos</a>
+        <a href="datosbasicos.php">Registro Cliente</a>
+    </nav>
+
+    <main class="main-container">
+        
+        <section class="page-section">
+            <h2 class="section-title">Catálogo de Productos</h2>
+            <div class="product-grid">
+                <article class="product-card">
+                    <div class="card-img-wrapper">
+                        <img src="imagenes/ajo-porro.jpeg" alt="Ajo porro fresco, presentación de 500 gramos.">
+                    </div>
+                    <h3 class="product-name">Ajo Porro (500g)</h3>
+                    <span class="product-price">$1.50</span>
+                    <button type="button" class="btn btn-secondary">Agregar al Carrito</button>
+                </article>
+
+                <article class="product-card">
+                    <div class="card-img-wrapper">
+                        <img src="imagenes/pan-frances.jpeg" alt="Pan francés, una unidad de pan.">
+                    </div>
+                    <h3 class="product-name">Pan Francés (Unidad)</h3>
+                    <span class="product-price">$0.25</span>
+                    <button type="button" class="btn btn-secondary">Agregar al Carrito</button>
+                </article>
+            </div>
+        </section>
+
+        <section class="page-section">
+            <h2 class="section-title">Registrar Nuevo Producto</h2>
+            <form action="#" method="POST" class="custom-form">
+                <div class="form-group">
+                    <label for="prod-nombre">Nombre del Producto:</label>
+                    <input type="text" id="prod-nombre" name="prod_nombre" class="form-input" required placeholder="Ej. Tomate Perita">
+                </div>
+
+                <div class="form-group">
+                    <label for="prod-precio">Precio ($):</label>
+                    <input type="number" step="0.01" id="prod-precio" name="prod_precio" class="form-input" required placeholder="Ej. 2.99">
+                </div>
+
+                <div class="form-group">
+                    <label for="prod-imagen">Ruta de Imagen:</label>
+                    <input type="text" id="prod-imagen" name="prod_imagen" class="form-input" placeholder="Ej. imagenes/producto.jpg">
+                </div>
+
+                <button type="submit" class="btn btn-primary">Guardar Producto</button>
+            </form>
+        </section>
+
+    </main>
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenido - Río</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="login-section">
+            <a href="#" class="back-arrow">&#8592;</a>
+            <div class="form-container">
+                <div class="logo-placeholder">
+                    <img src="imagenes/riologo.png" alt="Río Logo">
+                </div>
+                <h1>¡Bienvenido!</h1>
+
+                <form method="POST" action="login.php">
+                    <input type="email" name="correo" placeholder="Correo" required>
+                    <input type="password" name="password" placeholder="Contraseña" required>
+                    <button type="submit" class="btn-submit">Iniciar Sesión</button>
+                </form>
+
+                <a href="#" class="forgot-password">¿Olvidaste tu contraseña?</a>
+            </div>
+            <div class="footer-register">
+                <a href="datosbasicos.php">¡Regístrate!</a>
+            </div>
+        </div>
+        <div class="image-section">
+            <img src="imagenes/bienvenidos.jpg" alt="Persona de compras">
+        </div>
+    </div>
+</body>
+</html>
